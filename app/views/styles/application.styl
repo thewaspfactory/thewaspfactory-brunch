@@ -8,10 +8,42 @@
 
   .header
     width 1000px
-    height 124px
+    height 244px
     background url("../images/the-wasp-factory.png") no-repeat
     background-size 1000px 84px
-    background-position bottom left
+    background-position center 40px
+    display table-cell
+    text-align center
+    vertical-align bottom
+
+    .audio
+      width 600px
+      margin auto
+      padding-bottom 10px
+      a
+        font-size 16px
+        color #fff
+        padding 3px 20px 3px 26px
+        font-style normal
+        text-decoration none
+      a.sm2_link
+        background url("../images/paused.png") no-repeat
+        &:hover
+          background url("../images/play.png") no-repeat
+      a.sm2_playing
+        background url("../images/playing.png") no-repeat
+
+    .links
+      padding-top 10px
+      a
+        font-size 24px
+        font-style italic
+        color #50e2a3
+        text-decoration none
+        padding 6px
+        margin 10px
+        &:hover
+          border-bottom 1px solid white
 
   .content
     width 600px
@@ -22,7 +54,7 @@
     h5
       color white
       font-weight normal
-      padding-top 40px
+      padding-top 60px
 
     hr
       margin 40px 0px
@@ -31,7 +63,7 @@
       font-size 20px
 
     .footnote
-      font-size 13px
+      font-size 14px
       padding-bottom 40px
       font-style italic
 

@@ -2128,12 +2128,50 @@ input {
 }
 .app .header {
   width: 1000px;
-  height: 124px;
+  height: 244px;
   background: url("../images/the-wasp-factory.png") no-repeat;
   -webkit-background-size: 1000px 84px;
   -moz-background-size: 1000px 84px;
   background-size: 1000px 84px;
-  background-position: bottom left;
+  background-position: center 40px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+}
+.app .header .audio {
+  width: 600px;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.app .header .audio a {
+  font-size: 16px;
+  color: #fff;
+  padding: 3px 20px 3px 26px;
+  font-style: normal;
+  text-decoration: none;
+}
+.app .header .audio a.sm2_link {
+  background: url("../images/paused.png") no-repeat;
+}
+.app .header .audio a.sm2_link:hover {
+  background: url("../images/play.png") no-repeat;
+}
+.app .header .audio a.sm2_playing {
+  background: url("../images/playing.png") no-repeat;
+}
+.app .header .links {
+  padding-top: 10px;
+}
+.app .header .links a {
+  font-size: 24px;
+  font-style: italic;
+  color: #50e2a3;
+  text-decoration: none;
+  padding: 6px;
+  margin: 10px;
+}
+.app .header .links a:hover {
+  border-bottom: 1px solid #fff;
 }
 .app .content {
   width: 600px;
@@ -2144,7 +2182,7 @@ input {
 .app .content h5 {
   color: #fff;
   font-weight: normal;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 .app .content hr {
   margin: 40px 0px;
@@ -2153,7 +2191,7 @@ input {
   font-size: 20px;
 }
 .app .content .footnote {
-  font-size: 13px;
+  font-size: 14px;
   padding-bottom: 40px;
   font-style: italic;
 }
